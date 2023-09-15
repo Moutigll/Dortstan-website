@@ -73,3 +73,6 @@ body {animation-duration: 0.5s;
 .dropdown:hover .dropbtn {
     background-color: gray;
 }
+.constitution {
+    width: 35vw;
+}
