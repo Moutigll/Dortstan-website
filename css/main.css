@@ -1,5 +1,6 @@
 body {
     background-color: rgb(42, 48, 53);
+    color: #111;
     animation-duration: 0.5s;
     animation-name: slidein;}
   @keyframes slidein {
@@ -8,22 +9,17 @@ body {
 }
 ul {
     list-style-type : none;
-    display: inline-block; 
-	text-align: left;
 }
 li {
     display: inline-block; 
-	text-align: left;
-    font-size: 3em;
 }
 .nav-btn {
-    margin-left: 0.3vw;
-    border: 3px solid #663695;
-    border-radius: 5px;
-    background-color: #663695;
+    border: 3px solid #333;
+    background-color: #444;
+    font-size: 3vw;
 }
 .nav-btn:hover {
-    transition: 0.3s all;
+    transition: 0.5s all;
     background-color: rgb(222, 185, 255);
     cursor: grab;
 }
@@ -36,7 +32,7 @@ h1 {
 .dropbtn {
     background-color: #663695;
     padding: 16px;
-    font-size: 16px;
+    font-size: 1.7vw;
     border: none;
     cursor: pointer;
 }
@@ -82,5 +78,12 @@ h1 {
     cursor: grab;
 }
 .constitution {
-    width: 35vw;
+    width: 35%;
+}
+.content {
+    width: 65%;
+    margin-left: 17.5%;
+}
+.liste {
+    margin-left: 3%;
 }
