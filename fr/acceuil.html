@@ -41,9 +41,13 @@
         <img style="margin-top: 3vh;" src="../ressources/images/flag.png">
         <p>L'origine de la création de notre grand pays remonte à plus de deux mille ans, il tire son nom du nombre 4, un chiffre central dans notre culture.</p>
         <h2 id="hymne">Hymne du Dörtstan</h2>
-        	<div id="audio" style="background-color: #1e2030; border-radius: 8px; width: 40vw;">
+        	<div id="audio" style="background-color: #1e2030; border-radius: 8px; width: 40vw; display: flex; justify-content: center;">
                 <div id="audio-button">
-                    <img id="audio-button-ico" src="../ressources/images/play.png" style="height: 3vw; width: 3vw;">
+                    <img id="audio-button-ico" src="../ressources/images/play.png" style="height: 6vh; width: 6vh;">
+                </div>
+                <img src="../ressources/images/volume 66.png" style="height: 4vh; width: 4vh; margin-top: 1vh;" id="volume-ico">
+                <div>
+                    <input type="range" min="0" max="100" value="50" id="volume" class="volume">
                 </div>
             </div>
         <h2 id="capitale">Tetrapolis</h2>
@@ -52,9 +56,23 @@
     </center>
     <script>
         button = document.getElementById("audio-button");
-        ico = document.getElementById("audio-button-ico")
+        ico = document.getElementById("audio-button-ico");
         var audio = new Audio('../ressources/audio/03. Nujabes - Aruarian Dance.mp3');
+        volume = document.getElementById("volume")
+        volume_ico = document.getElementById("volume-ico")
         button_state = 0;
+        volume.oninput = function() {
+            audio.volume = volume.value/100
+            if (volume.value == 0) {
+                volume_ico.src="../ressources/images/volume 0.png"
+            }else if(volume.value > 0 && volume.value < 34) {
+                volume_ico.src="../ressources/images/volume 33.png"
+            }else if(volume.value > 33 && volume.value < 67) {
+                volume_ico.src="../ressources/images/volume 66.png"
+            } else{
+                volume_ico.src="../ressources/images/volume 100.png"
+            }
+        };
         button.addEventListener('click', function(e)  {
             if (button_state == 0){
                 ico.src="../ressources/images/pause.png";

@@ -96,3 +96,30 @@ h1 {
 #audio-button-ico:hover {
     cursor: pointer;
 }
+.volume {
+    outline: none;
+    -webkit-appearance: none;
+    margin-top: 2.5vh;
+    margin-left: 1vh;
+    border-radius: 5px;
+    height: 1vh;
+    background-color: #000;
+  }  
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    border: 0;
+    background: #7992c8;
+    cursor: pointer;
+  } 
+.volume::-moz-range-thumb {
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    border: 0;
+    background: url('images/place.png');
+    cursor: pointer;
+  }
