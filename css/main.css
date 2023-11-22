@@ -2,6 +2,7 @@ body {
     background-color: #24273a;
     color: #cad3f5;
     animation-duration: 0.5s;
+    font-family: 'Linux Biolinum', sans-serif;
     animation-name: slidein;}
   @keyframes slidein {
     from {margin-top: 10%;}
@@ -33,6 +34,7 @@ h1 {
     font-size: 5em;
 }
 .dropbtn {
+    font:unset;
     background-color: #1e2030;
     padding: 16px;
     color: #cad3f5;
@@ -103,8 +105,9 @@ h1 {
     margin-left: 1vh;
     border-radius: 5px;
     height: 1vh;
+    width: 5vw;
     background-color: #000;
-  }  
+}  
 .volume::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -114,7 +117,7 @@ h1 {
     border: 0;
     background: #7992c8;
     cursor: pointer;
-  } 
+} 
 .volume::-moz-range-thumb {
     width: 2vh;
     height: 2vh;
@@ -122,4 +125,32 @@ h1 {
     border: 0;
     background: url('images/place.png');
     cursor: pointer;
-  }
+}
+.lenght {
+    outline: none;
+    -webkit-appearance: none;
+    margin-top: 2.5vh;
+    margin-left: 1vh;
+    border-radius: 5px;
+    height: 1vh;
+    width: 18vw;
+    background-color: #000;
+}  
+.lenght::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    border: 0;
+    background: #7992c8;
+    cursor: pointer;
+} 
+.lenght::-moz-range-thumb {
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    border: 0;
+    background: url('images/place.png');
+    cursor: pointer;
+}
