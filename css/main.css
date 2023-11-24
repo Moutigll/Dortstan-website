@@ -25,7 +25,7 @@ li {
     transition: 0.5s all;
     border-color: #494d64;
     background-color: #494d64;
-    cursor: grab;
+    cursor: pointer;
 }
 a {
     all: unset;
@@ -123,7 +123,7 @@ h1 {
     height: 2vh;
     border-radius: 50%;
     border: 0;
-    background: url('images/place.png');
+    background-color: #000;
     cursor: pointer;
 }
 .lenght {
@@ -151,6 +151,19 @@ h1 {
     height: 2vh;
     border-radius: 50%;
     border: 0;
-    background: url('images/place.png');
+    background-color: #000;
+    cursor: pointer;
+}
+.button {
+    border: 3px solid #363a4f;
+    border-radius: 8px;
+    background-color: #363a4f;
+    font-size: 2vw;
+    margin-left: 0.3vw;
+}
+.button:hover {
+    transition: 0.5s all;
+    border-color: #494d64;
+    background-color: #494d64;
     cursor: pointer;
 }

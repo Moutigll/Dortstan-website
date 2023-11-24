@@ -33,9 +33,34 @@
             </div>
         </div>
     </header>
-    <div style="text-align: center;">
+    <center>
         <h2>Welcome on the official Dörtstan website !</h2>
+        <div class="buttons">
+            <center>
+                <a href="#hymne" class="button">Hymn</a>
+                <a href="#capitale" class="button">Capital</a>
+            </center>
+        </div>
         <img src="../ressources/images/flag.png">
-        <p>The creation of our great country go back more than two thousands years from today, and it take its name frome the number 4, a central figure our culture.</p>
-    </div>
+        <p>The creation of our great country go back more than two thousands years from today, and it take its name frome the number 4 in Turkish, a central figure our culture.</p>
+        <h2 id="hymne">Hymn of Dörtstan</h2>
+        <div id="audio" style="background-color: #1e2030; border-radius: 8px; width: 40vw; height: auto; display: flex; align-items: center; justify-content: center; color: #000; font-size: 3vh; font-weight: bolder; user-select: none;">
+                <audio src="../ressources/audio/03. Nujabes - Aruarian Dance.mp3" id="audio"></audio>
+                <div id="audio-button" style="margin-top: 1vh;">
+                    <img id="audio-button-ico" src="../ressources/images/play.png" style="height: 3vw; width: 3vw;">
+                </div>
+                <div>
+                    <span id="current-time">0:00/4:09</span>
+                    <input type="range" min="0" max="249" value="0" id="length-audio" class="lenght">
+                </div>
+                <img src="../ressources/images/volume 100.png" style="height: 2vw; width: 2vw; margin-top: 1vh; margin-left: 0.5vw;" id="volume-ico">
+                <div>
+                    <input type="range" min="0" max="100" value="100" id="volume" class="volume">
+                    <span id="volume-value">100</span>%
+                </div>
+        </div>
+        <h2 id="capitale">Tetrapolis</h2>
+        <p>Tetrapolis the capital of our country was founded by Marco Polo in the same time as our country after a travel of 44 days, today it is the essential center of our country </br>with multiple big districts like the business one or the Catherinism district wich is an important religion inside our borders.</p>
+    </center>
+    <script type="text/javascript" src="../js/audio-player.js"></script>
 </body>
