@@ -1,6 +1,6 @@
 button = document.getElementById("audio-button");
         ico = document.getElementById("audio-button-ico");
-        var audio = new Audio('../ressources/audio/Hymn');
+        var audio = new Audio('../ressources/audio/Hymn.mp3');
         current_time = document.getElementById("current-time")
         length_audio = document.getElementById("length-audio")
         volume = document.getElementById("volume")
