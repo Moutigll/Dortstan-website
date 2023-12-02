@@ -16,7 +16,7 @@ button = document.getElementById("audio-button");
                 if (sec < 10){
                     sec = "0" + sec
                 }
-                current_time.innerHTML = Math.floor(audio_time/60) + ":" + sec + "/4:09"
+                current_time.innerHTML = Math.floor(audio_time/60) + ":" + sec + "/0:42"
             }, 1000);
         })
         audio.addEventListener("ended", function(){
@@ -31,7 +31,7 @@ button = document.getElementById("audio-button");
             if (sec < 10){
                 sec = "0" + sec
             }
-            current_time.innerHTML = Math.floor(audio_time/60) + ":" + sec + "/4:09"
+            current_time.innerHTML = Math.floor(audio_time/60) + ":" + sec + "/0:42"
         }
         volume_ico.addEventListener('click', function(e)  {
             if (volume.value > 0){
