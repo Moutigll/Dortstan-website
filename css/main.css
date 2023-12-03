@@ -33,6 +33,9 @@ a {
 h1 {
     font-size: 5em;
 }
+h2 {
+    font-size: 2.5em;
+}
 .dropbtn {
     font:unset;
     background-color: #1e2030;
@@ -167,3 +170,66 @@ h1 {
     background-color: #494d64;
     cursor: pointer;
 }
+#flag {
+    width: 38vw;
+    height: 19vw;
+    animation-name: fadeItOut;
+    animation-duration: 0.75s;
+    content: url(../ressources/images/flag.png);
+}
+  
+#flag-container:hover > #flag {
+    animation-name: fadeItIn;
+    animation-duration: 2.5s;
+    content: url(../ressources/images/flag-alt.png);
+}
+
+  
+@keyframes fadeItIn {
+    0% {
+        content: url(../ressources/images/flag.png);
+    }
+    29.3444% {
+        margin-top: 5.5vw;
+        width: 16vw;
+        height: 8vw;
+    }
+    29.4%{
+        margin-top: 0vw;
+        width: 38vw;
+        height: 19vw;
+    }
+    100% {
+        content: url(../ressources/images/flag-alt.png);
+    }
+}
+  
+@keyframes fadeItOut {
+    0% {
+        content: url(../ressources/images/flag.png);
+        width: 16vw;
+        height: 8vw;
+        margin-top: 5.5vw;
+    }
+    100% {
+        margin-top: 0vw;
+        width: 38vw;
+        height: 19vw;
+        content: url(../ressources/images/flag.png);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  ::-webkit-scrollbar-track {
+    background: #cad3f5;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e2030;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #363a4f; 
+  }
