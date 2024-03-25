@@ -94,3 +94,14 @@ button = document.getElementById("audio-button");
                 audio.pause();
             };
         })
+
+        function sleep (time) {
+          return new Promise((resolve) => setTimeout(resolve, time));
+        }
+        flag = document.getElementById("flag")
+        flag.addEventListener("mouseover", function(event) {
+            sleep(699).then(() => {
+                flag.src="../ressources/images/flag-alt.png"
+            });
+            
+        })

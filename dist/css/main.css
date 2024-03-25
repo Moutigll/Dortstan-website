@@ -50,7 +50,7 @@ h2 {
     border: 3px solid #1e2030;
     border-radius: 4px;
     display: inline-block;
-    margin-left: 90vw;
+    margin-left: 85vw;
 }
 
 .dropdown-content {
@@ -233,3 +233,14 @@ h2 {
   ::-webkit-scrollbar-thumb:hover {
     background: #363a4f; 
   }
+.textbox {
+    width: 65vw;
+    font-size: 3vh;
+  }
+#gmap {
+    border: 3px solid #1e2030;
+    background-color: #1e2030;
+    border-radius: 8px;
+    height: 50vh;
+    width: 34vw;
+}
