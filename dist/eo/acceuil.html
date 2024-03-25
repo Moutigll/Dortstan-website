@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Bonvenejo !</title>
+    <meta content="Dorto - Bonvenejo" property="og:title" />
+    <meta content="Bonvenu al la retejo de la dorta mikronacio" property="og:description" />
+    <meta content="https://moutigll.github.io/Dortstan-website/dist/ressources/images/flag.png" property="og:image" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../ressources/images/flag.png">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/linux-biolinum');
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Dorto</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="nav-btn"><a href="acceuil.html">Bonvenejo</a></li>
+                    <li class="nav-btn"><a href="constitution.html">Konstitucio</a></li>
+                    <li class="nav-btn"><a href="histoire.html">Bonvenejo</a></li>
+                    <li class="nav-btn"><a href="géographie.html">Geografio</a></li>
+                    <li class="nav-btn"><a href="economie.html">Ekonomio</a></li>
+                </ul>
+            </nav>
+        </center>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Lingvo
+                </button>
+                <div class="dropdown-content">
+                    <a href="acceuil.html"><img src="../ressources/images/fr.png" width="20" height="15">&nbspFrançais&nbsp&nbsp&nbsp</a>
+                    <a href="../en/home.html"><img src="../ressources/images/en.png"width="20" height="15">&nbspEnglish&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                    <a href="../bzh/wait.html"><img src="../ressources/images/bzh.png"width="20" height="15">&nbspBrezhoneg</a>
+                    <a href="../eo/wait.html"><img src="../ressources/images/eo.png"width="20" height="15">&nbspEsperanto&nbsp</a>
+                </div>
+            </div>
+    </header>
+    <center>
+        <h2>Bonvenu al la oficiala retejo de nia nacio, Dorto!</h2>
+        <p style="width: 50vw;">Nia lando aĝas plu da mil jaroj, sia namo oriĝinas de la nombro 4, ĉefa nombro de nia kulturo.</p>
+    </div>
+        <div class="buttons">
+        	<center>
+                <a href="#drapeau" class="button">Flago</a>
+	        	<a href="#blason" class="button">Blazono</a>
+                <a href="#hymne" class="button">Himno</a>
+        	</center>
+        </div>
+        <h2 id="drapeau">La Flago</h2>
+        <div id="flag-container" style="height: 30vw; width: 40vw;">
+            <img id="flag" src="../ressources/images/flag.png">
+        </div>
+        <p style="margin-top: -10vh;" class="textbox">Nia flago reprezentas nian Flagon. Ĝia normala racio estas 1:2, sed neniu racio malbonas.</br></br></br></p>
+        <h2 id="blason">La Blazono</h2>
+        <img src="../ressources/images/blason.png" style="height: 32vh; width: 32vh; image-rendering: pixelated;">
+        <p class="textbox">Nia blazono reprezentas fragon, kiu dorte simbolas heoraĵadon</p>
+        <h2 id="hymne">Dorta Himno</h2>
+        <div style="width: 28vw; font-size: 1.5vw; text-align: left;">
+            </br>
+            Dorto, Liberu! Grandu!</br>
+            Vi portas Paĉo justa kaj dolĉa Liber'.</br>
+            Via flago kunfratiĝas</br>
+            Homojn marŝantojn al l' Ĝoj'.</br></br>
+
+            Dorto, iru antaŭe, al Lumo!</br>
+            Dorto, almarŝu ĝis Libero!</br></br>
+
+            Dorto, senaĝa lando!</br>
+            Proteĝas vi povrojn, vidvinojn, kaj orfojn.</br>
+            Donnas vi al ĉiuj regpovon !</br>
+            Tiele, vivu ni en la liberon.</br></br>
+
+            Dorto, iru antaŭe, al Lumo!</br>
+            Dorto, almarŝu ĝis Libero!</br></br>
+        </div>
+        	<div id="audio" style="background-color: #1e2030; border-radius: 8px; width: 40vw; height: auto; display: flex; align-items: center; justify-content: center; color: #000; font-size: 3vh; font-weight: bolder; user-select: none;">
+                <audio src="../ressources/audio/Hymn.mp3" id="audio"></audio>
+                <div id="audio-button" style="margin-top: 1vh;">
+                    <img id="audio-button-ico" src="../ressources/images/play.png" style="height: 3vw; width: 3vw;">
+                </div>
+                <div>
+                    <span id="current-time">0:00/0:42</span>
+                    <input type="range" min="0" max="42" value="0" id="length-audio" class="lenght">
+                </div>
+                <img src="../ressources/images/volume 100.png" style="height: 2vw; width: 2vw; margin-top: 1vh; margin-left: 0.5vw;" id="volume-ico">
+                <div>
+                    <input type="range" min="0" max="100" value="100" id="volume" class="volume">
+                    <span id="volume-value">100</span>%
+                </div>
+            </div>
+    </center>
+    <script type="text/javascript" src="../js/audio-player.js"></script>
+</body>
