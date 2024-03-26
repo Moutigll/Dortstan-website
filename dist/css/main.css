@@ -94,6 +94,7 @@ p {
     position: center;
     width: 40%;
     font-size: 1.5em;
+    text-align: left;
 }
 .content {
     width: 65%;
